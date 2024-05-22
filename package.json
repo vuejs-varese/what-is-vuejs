@@ -1,0 +1,52 @@
+{
+  "name": "@vuejs-varese/what-is-vuejs",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/vuejs-varese/what-is-vuejs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs-varese/what-is-vuejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vuejs-varese/what-is-vuejs/issues"
+  },
+  "author": {
+    "name": "Matteo Bilotta",
+    "email": "me@byloth.dev",
+    "url": "https://www.byloth.dev/"
+  },
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export",
+    "typecheck": "vue-tsc --build --force",
+    "lint": "eslint --ext .cjs,.js,.json,.ts,.vue --ignore-path .gitignore .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.49.3",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@byloth/eslint-config-nuxt": "^2.8.1",
+    "@types/node": "^20.12.12",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "husky": "^9.0.11",
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vue-eslint-parser": "^9.4.2",
+    "vue-tsc": "^2.0.19"
+  },
+  "private": true,
+  "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
+}
