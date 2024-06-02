@@ -4,38 +4,107 @@ theme: default
 
 # What is Vue.js?
 
-## Il framework JavaScript progressivo.
+## The **Progressive** JavaScript Framework
 
-Matteo Bilotta per Vue.js Varese
+Matteo Bilotta × Vue.js Varese
 
+---
+layout: center
 ---
 
 # Agenda
 
-- Let's know the audience!
+<v-clicks depth="2">
+
+- Let's get to know each other
+- Let's talk about Vue.js
+- Let's see some code
+- Some questions (hopefully)
+
+</v-clicks>
+
+---
+layout: cover
+---
+
+# Who am I?
+
+Let's get to know each other
+
+---
+layout: image-right
+image: ./images/emojis.png
+---
+
+<h1>
+    Matteo Bilotta
+    <small>(Byloth)</small>
+</h1>
+
+*«I usually write software that works.»*
+
+<v-clicks depth="2">
+
+- Software Craftsman @ Dinobros
+- Community Manager @ ...
+  - Vue.js Varese
+  - Vue.js Italia
+  - Python Varese
+- Vue.js Enthusiast since 2017
+
+</v-clicks>
 
 ---
 
-# Let's know the audience!
+# Who are you?
 
-Come partecipare a questa presentazione:
+Let's get to know each other
+
+<v-clicks>
+
+- Quanti di voi conoscono Vue.js?
+- Quanti di voi hanno già usato Vue.js in passato?
+- Quanti usano Vue.js come framework principale?
+- [...]
+
+</v-clicks>
+
+---
+layout: cover
+---
+
+# A brief introduction
+Let's talk about Vue.js
+
+---
+src: ./slides/vue-definitions.md
+hide: false
+---
+
+---
+layout: cover
+---
+
+# What does it looks like?
+Let's see some code
+
+---
+src: ./slides/sfc-code.md
+hide: false
+---
+
+---
+src: ./slides/sfc-example.md
+hide: false
+---
 
 ---
 
-# Quanti di voi conoscono Vue.js?
+# Pros
+Let's talk about Vue.js
 
-Let's know the audience!
+<v-clicks>
 
----
+- 
 
-# Quanti di voi hanno già usato Vue.js in passato?
-
-Let's know the audience!
-
----
-
-# Quanti usano Vue.js come framework principale?
-
-Let's know the audience!
-
----
+</v-clicks>

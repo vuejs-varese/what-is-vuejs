@@ -21,7 +21,7 @@
                 outline="!none"
                 hover:bg="gray-400 opacity-20"
                 @click="counter -= 1">
-            -
+            ➖
         </button>
         <span m="auto" p="2">{{ counter }}</span>
         <button border="l main"
@@ -30,7 +30,15 @@
                 outline="!none"
                 hover:bg="gray-400 opacity-20"
                 @click="counter += 1">
-            +
+            ➕
         </button>
     </div>
 </template>
+
+<style scoped>
+    button, span
+    {
+        min-width: 42.5px;
+        text-align: center;
+    }
+</style>
