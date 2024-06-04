@@ -1,6 +1,8 @@
 ---
 layout: two-cols-header
+transition: fade
 ---
+
 <h1>
     SFC
     <small>(Single File Component)</small>
