@@ -1,4 +1,5 @@
 ---
+background: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/2HmfbSpvcos.webp
 theme: default
 transition: fade
 ---
@@ -32,6 +33,8 @@ hide: false
 ---
 
 ---
+layout: image-right
+image: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/RUYCsWDSJFo.webp
 transition: fade
 ---
 
@@ -49,6 +52,7 @@ Let's get to know each other
 </v-clicks>
 
 ---
+background: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/jtsW--Z6bFw.webp
 layout: cover
 transition: fade
 ---
@@ -62,6 +66,7 @@ hide: false
 ---
 
 ---
+background: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/fVBWN3_ST0E.webp
 layout: cover
 transition: fade
 ---
@@ -71,7 +76,7 @@ Let's see some code
 
 ---
 src: ./slides/cdn-code.md
-hide: false
+hide: true
 ---
 
 ---
@@ -90,6 +95,7 @@ hide: false
 ---
 
 ---
+background: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/3GmudSL84n4.webp
 layout: cover
 transition: fade
 ---
@@ -98,6 +104,8 @@ transition: fade
 Let's talk about Vue.js
 
 ---
+layout: image-right
+image: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/CmSb2HIPNyg.webp
 transition: fade
 ---
 
@@ -123,6 +131,7 @@ Let's talk about Vue.js
 </v-click>
 
 ---
+background: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/OWXQvvovpeE.webp
 layout: cover
 transition: fade
 ---
@@ -142,6 +151,7 @@ Let's talk about Vue.js
 - The ecosystem is not so large
 - It isn't optimized for SEO
 - It's not so fast
+- "One man band"
 
 </v-clicks>
 
@@ -161,6 +171,8 @@ Let's talk about Vue.js
 - "One man band"
 
 ---
+layout: image-right
+image: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/aQcE3gDSSTY.webp
 transition: fade
 ---
 
@@ -169,7 +181,8 @@ Let's talk about Vue.js
 
 <v-clicks>
 
-- Organization of large projects
+- The ecosystem is not so large compared to other frameworks
+- Organization of large projects (❓)
 - Virtual DOM
 - Experienced developers
 
@@ -180,12 +193,51 @@ layout: cover
 transition: fade
 ---
 
-# Demo
+# Create a project
 Let's see some code
 
+```sh
+npm create vue@latest
+```
+
 ---
+transition: fade
+---
+
+# Who are you?
+
+Let's get to know each other
+
+- Quanti di voi conoscono Vue.js?
+- Quanti di voi hanno già usato Vue.js in passato?
+- Quanti usano Vue.js come framework principale?
+
+<v-clicks>
+
+- Quanti prenderanno in considerazione Vue.js per il prossimo progetto?
+
+</v-clicks>
+
+---
+background: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/VLaKsTkmVhk.webp
 layout: cover
 transition: fade
 ---
 
 # Thanks ❤️
+
+---
+layout: image-right
+image: ./images/byloth/qr-code.png
+transition: fade
+---
+
+# About this
+
+- [varese.vuejs.it](https://varese.vuejs.it)
+- [byloth.dev](https://byloth.dev)
+
+## Some techs
+
+- [vuejs.org](https://vuejs.org)
+- [sli.dev](https://sli.dev)

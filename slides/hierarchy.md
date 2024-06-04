@@ -8,7 +8,7 @@ Let's talk about Vue.js
 <v-clicks>
 
 - Composition over inheritance
-- Parent - Child
+- Parent / Child
 
 </v-clicks>
 
@@ -23,7 +23,7 @@ Let's talk about Vue.js
 ::left::
 
 - Composition over inheritance
-- Parent - Child
+- Parent / Child
 
 ::right::
 
@@ -95,8 +95,8 @@ Let's talk about Vue.js
 ::left::
 
 - Composition over inheritance
-- Parent - Child
-- Props - Events
+- Parent / Child
+- Props / Events
 
 ::right::
 
@@ -122,7 +122,7 @@ Let's talk about Vue.js
 </script>
 ```
 
-```vue {3,9,13,15,18|*}
+```vue {3,9,12,13,16}
 <template>
     <form @submit.prevent="onSubmit">
         <ClickCounter :default="count" @change="onChange" />
@@ -132,12 +132,30 @@ Let's talk about Vue.js
 
 <script setup>
     import { ref } from "vue";
-
     import ClickCounter from "../components/ClickCounter.vue";
 
     const count = ref(0);
-
     const onChange = (newValue) => { count.value = newValue; };
+    const onSubmit = () => fetch("/api/submit", {
+        method: "POST",
+        body: JSON.stringify({ count: count.value })
+    });
+</script>
+```
+
+```vue {3|*}
+<template>
+    <form @submit.prevent="onSubmit">
+        <ClickCounter v-model="count" />
+        <button type="submit">Submit</button>
+    </form>
+</template>
+
+<script setup>
+    import { ref } from "vue";
+    import ClickCounter from "../components/ClickCounter.vue";
+
+    const count = ref(0);
     const onSubmit = () => fetch("/api/submit", {
         method: "POST",
         body: JSON.stringify({ count: count.value })
@@ -154,175 +172,20 @@ Let's talk about Vue.js
 </span>
 
 ---
-layout: two-cols-header
 transition: fade
 ---
 
 # Hierarchy
 Let's talk about Vue.js
 
-::left::
-
 - Composition over inheritance
-- Parent - Child
-- Props - Events
-- Slots
-
-::right::
-
-> *`file://src/forms/CounterForm.vue`*
-
-```vue
-<template>
-    <form @submit.prevent="onSubmit">
-        <ClickCounter :default="count" @change="onChange" />
-        <button type="submit">Submit</button>
-    </form>
-</template>
-
-<script setup>
-    import { ref } from "vue";
-
-    import ClickCounter from "../components/ClickCounter.vue";
-
-    const count = ref(0);
-
-    const onChange = (newValue) => { count.value = newValue; };
-    const onSubmit = () => fetch("/api/submit", {
-        method: "POST",
-        body: JSON.stringify({ count: count.value })
-    });
-</script>
-```
-
----
-layout: two-cols-header
-transition: fade
----
-
-# Hierarchy
-Let's talk about Vue.js
-
-::left::
-
-- Composition over inheritance
-- Parent - Child
-- Props - Events
-- Slots
-
-::right::
-
-> *`file://src/views/ModalView.vue`*
-
-```vue {*|2|3|8|10|9|*}
-<script setup>
-    defineProps({ title: String });
-    defineEmits(["close"]);
-</script>
-
-<template>
-    <div class="modal-view">
-        <h2 v-if="title">{{ title }}</h2>
-        <slot></slot>
-        <button @click="$emit('close')">❌</button>
-    </div>
-</template>
-```
-
-::bottom::
-
-<span style="color: transparent;">
-    &nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
-</span>
-
----
-layout: two-cols-header
-transition: fade
----
-
-# Hierarchy
-Let's talk about Vue.js
-
-::left::
-
-- Composition over inheritance
-- Parent - Child
-- Props - Events
-- Slots
-
-::right::
-
-> *`file://src/pages/ProfilePage.vue`*
-
-```vue {*|4,5|7,8|13|14|15|16|*}
-<script setup>
-    import { ref } from "vue";
-
-    import CounterForm from "../forms/CounterForm.vue";
-    import ModalView from "../views/ModalView.vue";
-
-    const isOpen = ref(false);
-    const toggleModal = () => { isOpen.value = !isOpen.value; };
-</script>
-
-<template>
-    <div id="profile-page">
-        <ModalView v-show="isOpen"
-                   title="Profile"
-                   @close="toggleModal">
-            <CounterForm />
-        </ModalView>
-        <!-- ... -->
-    </div>
-</template>
-```
-
-::bottom::
-
-<span style="color: transparent;">
-    &nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
-</span>
-
----
-layout: two-cols-header
-transition: fade
----
-
-# Hierarchy
-Let's talk about Vue.js
-
-::left::
-
-- Composition over inheritance
-- Parent - Child
-- Props - Events
-- Slots
+- Parent / Child
+- Props / Events
 - Inject / Provide
 
-::right::
+<v-clicks>
 
-> *`file://src/pages/HomePage.vue`*
+- Slots
+- Teleport
 
-```vue {*}
-<script setup>
-    import Carousel from "../components/Carousel.vue";
-    import CarouselItem from "../components/CarouselItem.vue";
-</script>
-
-<template>
-    <div id="home-page">
-        <Carousel ...>
-            <CarouselItem v-for="..." ... >
-                <!-- ... -->
-            </CarouselItem>
-        </Carousel>
-        <!-- ... -->
-    </div>
-</template>
-```
-
-::bottom::
-
-<span style="color: transparent;">
-    &nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
-</span>
+</v-clicks>
