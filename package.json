@@ -1,8 +1,18 @@
 {
   "name": "@vuejs-varese/what-is-vuejs",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "An overvue about Vue.js: a brief introduction, some code examples and why you should choose Vue.js.",
+  "keywords": [
+    "Vue.js",
+    "Varese",
+    "Vite.js",
+    "Slidev",
+    "TypeScript",
+    "Community",
+    "Presentation",
+    "Introduction",
+    "Overview"
+  ],
   "homepage": "https://github.com/vuejs-varese/what-is-vuejs#readme",
   "repository": {
     "type": "git",
@@ -27,24 +37,23 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@slidev/cli": "^0.49.3",
+    "@slidev/cli": "^0.49.9",
     "@slidev/theme-default": "^0.25.0",
-    "@slidev/theme-seriph": "^0.25.0",
     "vue": "^3.4.27"
   },
   "devDependencies": {
     "@byloth/eslint-config-nuxt": "^2.8.1",
-    "@types/node": "^20.12.12",
-    "@typescript-eslint/eslint-plugin": "^7.10.0",
-    "@typescript-eslint/parser": "^7.10.0",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@types/node": "^20.14.2",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
+    "@vitejs/plugin-vue": "^5.0.5",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.26.0",
     "husky": "^9.0.11",
-    "sass": "^1.77.2",
+    "sass": "^1.77.4",
     "typescript": "^5.4.5",
-    "vite": "^5.2.11",
-    "vue-eslint-parser": "^9.4.2",
+    "vite": "^5.2.12",
+    "vue-eslint-parser": "^9.4.3",
     "vue-tsc": "^2.0.19"
   },
   "private": true,
